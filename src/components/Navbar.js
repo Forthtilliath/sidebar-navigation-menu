@@ -22,11 +22,13 @@ function Navbar() {
         {/* Navigation affichée quand le menu est ouvert */}
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items">
+            {/* Affichage de la croix pour fermer le menu */}
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars" onClick={showSidebar}>
                 <AiOutlineClose />
               </Link>
             </li>
+            {/* Affichage des éléments du menu en fonction des données du fichier */}
             {SidebarData.map((item, index) => (
               <li key={index} className={item.cName} onClick={showSidebar}>
                 <NavLink exact to={item.path} activeClassName="active">
@@ -43,3 +45,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+// https://stackoverflow.com/questions/45898789/react-router-pass-param-to-component
