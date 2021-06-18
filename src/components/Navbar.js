@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
@@ -27,10 +27,14 @@ function Navbar() {
             </li>
             {SidebarData.map((item, index) => (
               <li key={index} className={item.cName}>
-                <Link to={item.path}>
+                <NavLink
+                  exact
+                  to={item.path}
+                  activeClassName="active"
+                >
                   {item.icon}
                   <span>{item.title}</span>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
