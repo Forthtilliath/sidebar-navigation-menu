@@ -50,13 +50,16 @@
   border-radius: 4px;
 }
 
-.nav-text a.active {
-  background-color: #fff;
-  color:green;
+/* Couleur du lien de la page où on est */
+.nav-text a.active, .nav-text a.active svg {
+    background-color: #bfbfff;
+    color: #060b26 !important;
 }
 
-.nav-text a:hover {
-  background-color: #1a83ff;
+/* Couleur du lien au survol */
+.nav-text a:hover, .nav-text a:hover svg {
+    background-color: #ffff73;
+    color: #060b26 !important;
 }
 
 .nav-menu-items {
@@ -70,6 +73,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+/* Apparence de la croix de fermeture au survol */
+.navbar-toggle a:hover svg {
+    color: #bfbfff !important;
 }
 
 span {
