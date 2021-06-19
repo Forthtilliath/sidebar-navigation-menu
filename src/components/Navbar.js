@@ -45,5 +45,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-// https://stackoverflow.com/questions/45898789/react-router-pass-param-to-component

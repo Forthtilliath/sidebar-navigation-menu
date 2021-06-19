@@ -11,7 +11,7 @@
   height: 100vh;
 }
 
-.home, .reports, .products, .messages, .team, .support {
+.notfound, .home, .reports, .products, .messages, .team, .support {
   display: flex;
   height: calc(100% - 80px);
   align-items: center;

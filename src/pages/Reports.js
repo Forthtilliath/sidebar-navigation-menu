@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Reports() {
+function Reports(props) {
+  useEffect(() => {
+    document.title = props.titleStartBy + "Liste des rapports";
+  });
   return (
     <div className="reports">
       <h1>Reports</h1>
