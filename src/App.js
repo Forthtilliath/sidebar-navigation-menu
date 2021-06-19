@@ -1,9 +1,9 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { SidebarData } from "./components/SidebarData";
+import Navbar from "./components/Nav/Navbar";
+import { SidebarData } from "./components/Nav/SidebarData";
 import NotFound from "./pages/NotFound";
+import "./App.css";
 
 function App() {
   return (
