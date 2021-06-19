@@ -52,13 +52,13 @@
 
 /* Couleur du lien de la page où on est */
 .nav-text a.active, .nav-text a.active svg {
-    background-color: #bfbfff;
+    background-color: #3f7bfd;
     color: #060b26 !important;
 }
 
 /* Couleur du lien au survol */
 .nav-text a:hover, .nav-text a:hover svg {
-    background-color: #ffff73;
+    background-color: #bfbfff;
     color: #060b26 !important;
 }
 
